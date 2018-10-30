@@ -1,8 +1,5 @@
-nome = input('Digite o seu nome completo!')
+nome = input('Digite o seu nome completo!').title()
 nomex = nome.split()
-n1 = len(nomex)
-nome1 = nomex[0]
-nome2 = nomex[n1-1]
 print('O seu nome completo é = {}'.format(nome))
-print('Primeiro nome = {}'.format(nome1))
-print('Segundo nome = {}'.format(nome2))
+print('Primeiro nome = {}'.format(nomex[0]))
+print('Segundo nome = {}'.format(nomex[len(nomex)-1]))
