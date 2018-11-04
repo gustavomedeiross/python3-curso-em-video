@@ -14,11 +14,8 @@ for rdm in range(1, 5):
             maioridade = idade
             nmi = nome #nome do homem de maior idade
 
-
-
-    if sexo == 'F':
-        if idade < 20:
-            ma20 += 1
+    if sexo == 'F' and idade < 20:
+        ma20 += 1
 
 print('A média de idade do grupo é de {} anos.'.format(si/4))
 print('O homem mais velho tem {} anos e se chama {}.'.format(maioridade, nmi))
