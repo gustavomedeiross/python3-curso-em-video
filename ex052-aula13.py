@@ -1,8 +1,7 @@
 n1 = int(input('Digite um número ='))
 s = 0
 for c in range(2, n1):
-    n2 = n1 % c
-    if n2 == 0:
+    if n1 % c  == 0:
         s += 1
 
 if s >= 1:
