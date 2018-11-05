@@ -6,23 +6,23 @@ cont = 0
 while True:
    valor = int(input('Diga um valor! ='))
    humano = input('Par ou Ímpar? [P/I]').strip().upper()[0]
+   while humano not in 'PI':
+       humano = input('Par ou Ímpar? [P/I]').strip().upper()[0]
    pc = randint(0, 10)
    resultado = (valor+pc) % 2
-
    if humano == 'P':
        if resultado == 0:
-           break
+           cont += 1
+           print('Você venceu!')
        if resultado != 0:
-           print('O computador ganhou!')
+           print('O computador venceu!')
+           break
    elif humano == 'I':
        if resultado != 0:
-           break
+           cont += 1
+           print('Você venceu!')
        if resultado == 0:
            print('O computador ganhou!')
-   else:
-       print('Você digitou um valor inválido. Digite outro valor novamente!')
-   cont += 1
+           break
    print(f'O computador jogou {pc}')
-
-print(f'VOCÊ VENCEU! O computador ganhou {cont} vezes consecutivas!')
-
+print(f'GAME OVER! Você ganhou {cont} vezes!')
