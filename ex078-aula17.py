@@ -25,4 +25,4 @@ print(f'O menor valor digitado foi {menor}, que está na posição', end=' ')
 for posmenor, valor in enumerate(lista):
    if valor == menor:
        print(f'{posmenor}...', end='')
-
+print()
