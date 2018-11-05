@@ -1,5 +1,5 @@
 from random import choices
-núm = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+núm = (range(0, 11))
 n1 = choices(núm, k=5)
 menor = maior = n1[0]
 for c in n1:
