@@ -1,9 +1,10 @@
-n = cont = sum = 0
+núm = 0
 while True:
-   n = int(input('Digite um número (para parar digite 999)'))
-   if n == 999:
-       break
-   sum += n
-   cont += 1
-print(f'A soma dos números é {sum} e a quantidade de números digitados foi {cont}')
-
+    núm = int(input('Quer ver a tabuada de qual valor? '))
+    print('-' * 30)
+    if núm < 0:
+        break
+    for x in range(1, 11):
+        print(f'{núm} x {x} = {núm * x}')
+    print('-' * 30)
+print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
