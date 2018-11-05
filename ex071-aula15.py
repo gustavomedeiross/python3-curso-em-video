@@ -28,9 +28,11 @@ while True:
        saque -= 1
    else:
        break
-
-
-print(f'''Total de {cedulasde50} cédulas de R$50,00
-Total de {cedulasde20} cédulas de R$20,00
-Total de {cedulasde10} cédulas de R$10,00
-Total de {cedulasde1} cédulas de R$1,00''')
+if cedulasde50 > 0:
+    print(f'Total de {cedulasde50} cédulas de R$50,00')
+if cedulasde20 > 0:
+    print(f'Total de {cedulasde20} cédulas de R$20,00')
+if cedulasde10 > 0:
+    print(f'Total de {cedulasde10} cédulas de R$10,00')
+if cedulasde1 > 0:
+    print(f'Total de {cedulasde1} cédulas de R$1,00')
