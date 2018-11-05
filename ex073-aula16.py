@@ -9,6 +9,5 @@ print(f'Os 4 últimos da tabela são: {times[-4:]}')
 print(marquinha)
 print(sorted(times))
 print(marquinha)
-chape = times.index('Chapecoense')+1
-print(f'A Chapecoense está em {chape}ºlugar')
+print(f'A Chapecoense está em {times.index("Chapecoense")+1}º lugar')
 print(marquinha)
