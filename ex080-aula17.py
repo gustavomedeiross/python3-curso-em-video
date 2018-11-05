@@ -11,6 +11,6 @@ for índice in range(0, 5):
                lista.insert(pos, núm)
                print(f'Adicionado na posição {pos} da lista...')
                break
-            pos += 1
+           pos += 1
 print('=-' * 30)
 print(f'Os valores digitados em ordem foram {lista}')
